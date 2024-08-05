@@ -1,7 +1,7 @@
 from aiogram.types import ReplyKeyboardMarkup,KeyboardButton,InlineKeyboardMarkup,InlineKeyboardButton
 
 main_kb = InlineKeyboardMarkup(row_width=2, inline_keyboard=[
-    [InlineKeyboardButton(text="Играть!", callback_data="game")],
+    [InlineKeyboardButton(text="Играть!", callback_data="game1")],
     [InlineKeyboardButton(text="Меню", callback_data="menu"),
      InlineKeyboardButton(text="Магазин", callback_data="shop")],
     [InlineKeyboardButton(text="Топ игроков", callback_data="top_of_user")]

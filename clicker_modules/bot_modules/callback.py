@@ -9,8 +9,8 @@ from .handler import add_user, check_user, plus_click
 async def hello(message : Message):
     await message.answer("Привет!", reply_markup = main_kb)
 
-@dp.callback_query(F.data == "game")
+@dp.callback_query(F.data == "game1")
 async def game(callback : CallbackQuery):
     await callback.message.edit_text("Жми на кнопук!", reply_markup = game_list)
-    plus_click(count_clicks = "?", points = "?" , user_id = "?")
+    await plus_click(count_clicks = 0, points = 0 , user_id = 0)
     await callback.answer("Сработало")

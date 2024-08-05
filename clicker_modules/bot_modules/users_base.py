@@ -10,4 +10,4 @@ with sqlite3.connect("users_data.db") as db:
         count_clicks INTEGER NOT NULL
     )
     """)
-    db.commit()
+    cursor.execute("INSERT INTO users (username, user_id, points, count_clicks) VALUES (?, ?, ?, ?)", ('Zixther', 13, 0, 0))
